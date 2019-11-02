@@ -82,3 +82,4 @@ while True:
     rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
     time.sleep(5)
     nox()
+    time.sleep(5)
