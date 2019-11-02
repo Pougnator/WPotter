@@ -51,6 +51,11 @@ def rainbow_cycle(wait):
         pixels.show()
         time.sleep(wait)
 
+def nox():
+    #Turn off all leds
+    pixels.fill((0,0,0))
+    pixels.show()
+
 
 while True:
     # Comment this line out if you have RGBW/GRBW NeoPixels
@@ -75,3 +80,5 @@ while True:
     # time.sleep(1)
 
     rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
+    time.sleep(5)
+    nox()
