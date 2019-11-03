@@ -254,10 +254,10 @@ try:
     #FindWand()
     print ("START incendio_pin ON and set switch off if video is running")
     #pi.write(incendio_pin,1)
-    #pi.write(switch_pin,0)   
-    nox()   
+    #pi.write(switch_pin,0)     
     #TrackWand()  
 finally:   
+    nox()
     cv2.destroyAllWindows()
     cam.release()  
 
