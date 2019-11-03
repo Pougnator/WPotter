@@ -58,7 +58,7 @@ def nox():
 
 def lumos():
     #Turn on all leds
-    pixels.fill((255,255,255))
+    pixels.fill((255,0,0))
     pixels.show()
 #def incendio():
 
