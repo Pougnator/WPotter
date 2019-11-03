@@ -51,7 +51,7 @@ lk_params = dict( winSize  = (15,15),
 dilation_params = (5, 5)
 movment_threshold = 80
 
-Scan()
+
 
 # Scan starts camera input and runs FindNewPoints
 def Scan():
@@ -66,7 +66,7 @@ def Scan():
     except KeyboardInterrupt:
         End()
         exit
-
+Scan()
 #FindWand is called to find all potential wands in a scene.  These are then tracked as points for movement.  The scene is reset every 3 seconds.
 def FindNewPoints():
     global old_frame,old_gray,p0,mask,color,ig,img,frame
