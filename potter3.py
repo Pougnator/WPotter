@@ -244,10 +244,12 @@ def TrackWand():
                         break           
 
 try:
+    
     FindWand()
     print ("START incendio_pin ON and set switch off if video is running")
     #pi.write(incendio_pin,1)
-    #pi.write(switch_pin,0)      
+    #pi.write(switch_pin,0)   
+    nox()   
     TrackWand()  
 finally:   
     cv2.destroyAllWindows()
