@@ -29,7 +29,8 @@ import math
 import time
 import pigpio
 import warnings
-from mypixel import *
+from mypixel import lumos, nox
+
 
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
@@ -67,6 +68,7 @@ dilation_params = (5, 5)
 movment_threshold = 80
 
 print ("START switch_pin ON for pre-video test")
+nox()
 lumos()
 time.sleep(2)
 nox()
