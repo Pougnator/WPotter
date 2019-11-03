@@ -53,11 +53,13 @@ def rainbow_cycle(wait):
 
 def nox():
     #Turn off all leds
+    print("pixel nox")
     pixels.fill((0,0,0))
     pixels.show()
 
 def lumos():
     #Turn on all leds
+    print("pixel lumos")
     pixels.fill((255,255,255))
     pixels.show()
 #def incendio():
