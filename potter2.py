@@ -29,20 +29,20 @@ import cv2
 import threading
 import math
 import time
-import pigpio
+#import pigpio
 
 GPIOS = 32
 MODES = ["INPUT", "OUTPUT", "ALT5", "ALT4", "ALT0", "ALT1", "ALT2", "ALT3"]
 
-pi = pigpio.pi()
+#pi = pigpio.pi()
 
 #pin for Powerswitch (Lumos,Nox)
 switch_pin = 16
-pi.set_mode(switch_pin,pigpio.OUTPUT)
+#pi.set_mode(switch_pin,pigpio.OUTPUT)
 
 #pin for Trinket (Colovario)
 trinket_pin = 12
-pi.set_mode(trinket_pin,pigpio.OUTPUT)
+#pi.set_mode(trinket_pin,pigpio.OUTPUT)
 
 # Parameters for image processing
 lk_params = dict( winSize  = (15,15),
@@ -185,15 +185,15 @@ def Spell(spell):
     cv2.putText(mask, spell, (5, 25),cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255,0,0))
     if (spell=="Colovaria"):
         print("GPIO trinket")
-        pi.write(trinket_pin,0)
+ #       pi.write(trinket_pin,0)
         time.sleep(1)
-        pi.write(trinket_pin,1)
+#      pi.write(trinket_pin,1)
     elif (spell=="Lumos"):
         print("GPIO ON")
-        pi.write(switch_pin,1)
+ #       pi.write(switch_pin,1)
     elif (spell=="Nox"):
         print("GPIO OFF")
-        pi.write(switch_pin,0)
+  #      pi.write(switch_pin,0)
     print("CAST: %s" %spell)
 
 #IsGesture is called to determine whether a gesture is found within tracked points
