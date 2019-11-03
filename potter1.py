@@ -30,14 +30,25 @@ import time
 import pigpio
 import warnings
 from mypixel import lumos, nox
-
+import board
+import neopixel
 
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
 GPIOS=32
 MODES=["INPUT", "OUTPUT", "ALT5", "ALT4", "ALT0", "ALT1", "ALT2", "ALT3"]
 
+
 pi = pigpio.pi()
+###Neopixel init######################
+pixel_pin = board.D18
+num_pixels = 24
+ORDER = neopixel.GRB
+pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=False,
+                           pixel_order=ORDER)
+
+###End Neopixel init###################
+
 
 #NOTE pins use BCM numbering in code.  I reference BOARD numbers in my articles - sorry for the confusion!
 
