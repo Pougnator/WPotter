@@ -56,6 +56,12 @@ def nox():
     pixels.fill((0,0,0))
     pixels.show()
 
+def lumos():
+    #Turn on all leds
+    pixels.fill((255,255,255))
+    pixels.show()
+#def incendio():
+
 if __name__ == "__main__":
     while True:
         # Comment this line out if you have RGBW/GRBW NeoPixels
@@ -83,3 +89,5 @@ if __name__ == "__main__":
         time.sleep(5)
         nox()
         time.sleep(5)
+        lumos()
+        time.sleep(3)
