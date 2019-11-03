@@ -29,7 +29,8 @@ import math
 import time
 #import pigpio
 import warnings
-from mypixel import *
+import mypixel
+from mypixel import nox, lumos
 #import board
 #import neopixel
 
