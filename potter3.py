@@ -84,6 +84,7 @@ time.sleep(2)
 lumos()
 time.sleep(2)
 nox()
+time.sleep(2)
 # start capturing
 cv2.namedWindow("Raspberry Potter")
 cam = cv2.VideoCapture(-1)
@@ -111,9 +112,12 @@ def Spell(spell):
     elif (spell=="Lumos"):
         print ("CAST: %s" %spell)
         lumos()
+        time.sleep(2)
     elif (spell=="Nox"):
-        nox() 
         print ("CAST: %s" %spell)
+        nox() 
+        time.sleep(2)
+        
     
 
 def IsGesture(a,b,c,d,i):
