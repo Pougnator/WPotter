@@ -80,6 +80,7 @@ movment_threshold = 80
 
 print ("START switch_pin ON for pre-video test")
 nox()
+time.sleep(2)
 lumos()
 time.sleep(2)
 nox()
