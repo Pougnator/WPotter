@@ -52,20 +52,20 @@ pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=Fal
 
 #NOTE pins use BCM numbering in code.  I reference BOARD numbers in my articles - sorry for the confusion!
 
-#pin for Powerswitch (Lumos,Nox)
-switch_pin = 23
-#pi.set_mode(switch_pin,pigpio.OUTPUT)
+# #pin for Powerswitch (Lumos,Nox)
+# switch_pin = 23
+# #pi.set_mode(switch_pin,pigpio.OUTPUT)
 
-#pin for Particle (Nox)
-nox_pin = 24
-#pi.set_mode(nox_pin,pigpio.OUTPUT)
+# #pin for Particle (Nox)
+# nox_pin = 24
+# #pi.set_mode(nox_pin,pigpio.OUTPUT)
 
-#pin for Particle (Incendio)
-incendio_pin = 22
-#pi.set_mode(incendio_pin,pigpio.OUTPUT)
+# #pin for Particle (Incendio)
+# incendio_pin = 22
+# #pi.set_mode(incendio_pin,pigpio.OUTPUT)
 
-#pin for Trinket (Colovario)
-trinket_pin = 12
+# #pin for Trinket (Colovario)
+# trinket_pin = 12
 #pi.set_mode(trinket_pin,pigpio.OUTPUT)
 
 print ("Initializing point tracking")
