@@ -29,6 +29,7 @@ import math
 import time
 import pigpio
 import warnings
+from mypixel import *
 
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
@@ -66,10 +67,9 @@ dilation_params = (5, 5)
 movment_threshold = 80
 
 print ("START switch_pin ON for pre-video test")
-pi.write(nox_pin,0)
-pi.write(incendio_pin,0)
-pi.write(switch_pin,1)
-
+lumos()
+time.sleep(2)
+nox()
 # start capturing
 cv2.namedWindow("Raspberry Potter")
 cam = cv2.VideoCapture(-1)
@@ -96,18 +96,9 @@ def Spell(spell):
         pi.write(incendio_pin,1)
     elif (spell=="Lumos"):
         print ("switch_pin ON")
-        pi.write(switch_pin,1)
-        print ("nox_pin OFF")
-        pi.write(nox_pin,0)
-        print ("incendio_pin OFF")
-        pi.write(incendio_pin,0)    
+        lumos()
     elif (spell=="Nox"):
-        print ("switch_pin OFF")
-        pi.write(switch_pin,0)
-        print ("nox_pin ON")
-        pi.write(nox_pin,1)
-        print ("incendio_pin OFF")
-        pi.write(incendio_pin,0)    
+        nox() 
         print ("CAST: %s" %spell)
     
 
