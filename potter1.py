@@ -29,7 +29,7 @@ import math
 import time
 import pigpio
 import warnings
-from mypixel import lumos, nox
+#from mypixel import lumos, nox
 import board
 import neopixel
 
@@ -37,9 +37,9 @@ warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
 GPIOS=32
 MODES=["INPUT", "OUTPUT", "ALT5", "ALT4", "ALT0", "ALT1", "ALT2", "ALT3"]
-
-
 pi = pigpio.pi()
+
+
 ###Neopixel init######################
 pixel_pin = board.D18
 num_pixels = 24
@@ -79,10 +79,10 @@ dilation_params = (5, 5)
 movment_threshold = 80
 
 print ("START switch_pin ON for pre-video test")
-nox()
-lumos()
+#nox()
+#lumos()
 time.sleep(2)
-nox()
+#nox()
 # start capturing
 cv2.namedWindow("Raspberry Potter")
 cam = cv2.VideoCapture(-1)
@@ -109,9 +109,9 @@ def Spell(spell):
         pi.write(incendio_pin,1)
     elif (spell=="Lumos"):
         print ("switch_pin ON")
-        lumos()
+        #lumos()
     elif (spell=="Nox"):
-        nox() 
+        #nox() 
         print ("CAST: %s" %spell)
     
 
