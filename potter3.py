@@ -41,11 +41,11 @@ MODES=["INPUT", "OUTPUT", "ALT5", "ALT4", "ALT0", "ALT1", "ALT2", "ALT3"]
 
 
 ###Neopixel init######################
-# pixel_pin = board.D18
-# num_pixels = 24
-# ORDER = neopixel.GRB
-# pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=False,
-#                            pixel_order=ORDER)
+pixel_pin = board.D18
+num_pixels = 24
+ORDER = neopixel.GRB
+pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=False,
+                           pixel_order=ORDER)
 
 ###End Neopixel init###################
 
@@ -108,10 +108,10 @@ def Spell(spell):
         print ("incendio_pin ON")
         #pi.write(incendio_pin,1)
     elif (spell=="Lumos"):
-        print ("switch_pin ON")
-        #lumos()
+        print ("CAST: %s" %spell)
+        lumos()
     elif (spell=="Nox"):
-        #nox() 
+        nox() 
         print ("CAST: %s" %spell)
     
 
