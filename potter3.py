@@ -41,11 +41,11 @@ MODES=["INPUT", "OUTPUT", "ALT5", "ALT4", "ALT0", "ALT1", "ALT2", "ALT3"]
 
 
 ###Neopixel init######################
-pixel_pin = board.D18
-num_pixels = 24
-ORDER = neopixel.GRB
-pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=False,
-                           pixel_order=ORDER)
+# pixel_pin = board.D18
+# num_pixels = 24
+# ORDER = neopixel.GRB
+# pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=False,
+#                            pixel_order=ORDER)
 
 ###End Neopixel init###################
 
