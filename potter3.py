@@ -255,7 +255,7 @@ try:
     #pi.write(incendio_pin,1)
     #pi.write(switch_pin,0)   
     nox()   
-    TrackWand()  
+    #TrackWand()  
 finally:   
     cv2.destroyAllWindows()
     cam.release()  
