@@ -29,9 +29,9 @@ import math
 import time
 #import pigpio
 import warnings
-from mypixel import *
-import board
-import neopixel
+from mypixel import nox, lumos
+#import board
+#import neopixel
 
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
