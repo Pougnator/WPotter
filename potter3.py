@@ -114,11 +114,9 @@ def Spell(spell):
     elif (spell=="Lumos"):
         print ("CAST: %s" %spell)
         lumos()
-        time.sleep(2)
     elif (spell=="Nox"):
         print ("CAST: %s" %spell)
         nox() 
-        time.sleep(2)
         
     
 
@@ -257,7 +255,7 @@ try:
     #pi.write(incendio_pin,1)
     #pi.write(switch_pin,0)     
     TrackWand()  
-    
+
 finally:   
     nox()
     cv2.destroyAllWindows()
