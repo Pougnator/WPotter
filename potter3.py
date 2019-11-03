@@ -29,9 +29,9 @@ import math
 import time
 #import pigpio
 import warnings
-#from mypixel import lumos, nox
-import board
-import neopixel
+from mypixel import *
+#import board
+#import neopixel
 
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
@@ -79,10 +79,10 @@ dilation_params = (5, 5)
 movment_threshold = 80
 
 print ("START switch_pin ON for pre-video test")
-#nox()
-#lumos()
+nox()
+lumos()
 time.sleep(2)
-#nox()
+nox()
 # start capturing
 cv2.namedWindow("Raspberry Potter")
 cam = cv2.VideoCapture(-1)
