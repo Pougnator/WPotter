@@ -30,8 +30,8 @@ import time
 #import pigpio
 import warnings
 from mypixel import *
-#import board
-#import neopixel
+import board
+import neopixel
 
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
