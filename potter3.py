@@ -41,11 +41,11 @@ MODES=["INPUT", "OUTPUT", "ALT5", "ALT4", "ALT0", "ALT1", "ALT2", "ALT3"]
 
 
 ###Neopixel init######################
-pixel_pin = board.D18
-num_pixels = 24
-ORDER = neopixel.GRB
-pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=False,
-                           pixel_order=ORDER)
+# pixel_pin = board.D18
+# num_pixels = 24
+# ORDER = neopixel.GRB
+# pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=False,
+#                            pixel_order=ORDER)
 
 ###End Neopixel init###################
 
@@ -85,6 +85,7 @@ lumos()
 time.sleep(2)
 nox()
 time.sleep(2)
+print ("start capturing")
 # start capturing
 cv2.namedWindow("Raspberry Potter")
 cam = cv2.VideoCapture(-1)
